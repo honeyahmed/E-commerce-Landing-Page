@@ -1,13 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@300&display=swap');
 body {
+  font-family: 'Montserrat Alternates' ,sans-serif !important;
+}
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+/* scroll to top button */
+.top-btn-position {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  z-index: 9999;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.top-btn-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #9c27b0;
+  color: white;
+  font-size: 24px !important;
+  cursor: pointer;
+  animation: beat 0.25s infinite alternate;
+  transform-origin: center;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+@keyframes beat {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.top-btn-style:hover {
+  animation: none;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.css-jcn4dz-MuiBadge-badge{
+  background-color: #9c27b0 !important;
 }
